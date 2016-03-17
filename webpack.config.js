@@ -27,7 +27,7 @@ module.exports = {
     },
     devServer: {
          headers: { "Access-Control-Allow-Origin": "*" },
-         contentBase: 'build/',
+         contentBase: '.',
          port: 8443
     }
 };
