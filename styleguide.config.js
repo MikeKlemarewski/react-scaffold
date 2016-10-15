@@ -11,6 +11,11 @@ module.exports = {
                 test: /\.jsx?$/,
                 include: dir,
                 loader: 'babel'
+            },
+	    {
+                test: /\.css$/,
+                include: dir,
+                loader: 'style!css?modules&importLoader=1'
             }
         )
 

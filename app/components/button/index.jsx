@@ -1,8 +1,9 @@
 import {PropTypes} from 'react'
+import styles from './style.css'
 
 const Button = ({text}) => {
     return (
-        <button>{text}</button>
+        <button className={styles.button}>{text}</button>
     )
 }
 

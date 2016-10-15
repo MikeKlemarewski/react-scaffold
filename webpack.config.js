@@ -23,7 +23,10 @@ module.exports = {
                 presets: ['es2015', 'react']
             },
             cacheDirectory: __dirname + '/tmp'
-        }]
+        },{
+	    test: /.css$/,
+	    loader: 'style!css-loader?modules&importLoader=1&localIdentName=[name]___local___[hash:base64:5]'
+	}]
     },
     devServer: {
          headers: { "Access-Control-Allow-Origin": "*" },
